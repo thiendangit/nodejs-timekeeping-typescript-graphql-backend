@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  ts-node-docker:
+    build:
+      target: production
+    command: node build/index.js
+
+#docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
